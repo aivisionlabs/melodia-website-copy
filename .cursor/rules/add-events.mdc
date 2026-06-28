@@ -1,0 +1,8 @@
+---
+description: "When adding or editing UI components, add Google Analytics events so interactions can be tracked and analyzed."
+alwaysApply: false
+globs:
+  - "**/components/**/*.{tsx,jsx}"
+  - "**/app/**/*.{tsx,jsx}"
+---
+When adding new components or modifying existing ones, add events for them so interactions can be analyzed in Google Analytics.

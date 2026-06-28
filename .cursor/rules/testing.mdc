@@ -1,0 +1,14 @@
+---
+description: Unit tests, e2e specs, and test-adjacent scripts
+alwaysApply: false
+globs:
+  - "**/*.test.ts"
+  - "**/*.spec.ts"
+  - "src/__tests__/**"
+  - "e2e/**"
+---
+# Testing
+
+- Follow [docs/testing-guide.md](docs/testing-guide.md).
+- Prefer focused tests: one main assertion concept per case where practical; mock only when necessary.
+- Many flows are covered by `npm` scripts in `package.json` (`test:*`, `simulate:*`) — use those for integration-style checks when appropriate.

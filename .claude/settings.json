@@ -1,0 +1,52 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run *)",
+      "Bash(npm install *)",
+      "Bash(npm ls *)",
+      "Bash(npx *)",
+      "Bash(git status)",
+      "Bash(git diff *)",
+      "Bash(git log *)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git branch *)",
+      "Bash(git checkout *)",
+      "Bash(git fetch *)",
+      "Bash(git pull *)",
+      "Bash(git stash *)",
+      "Bash(ls *)",
+      "Bash(find *)",
+      "Bash(grep *)",
+      "Bash(cat *)",
+      "Bash(head *)",
+      "Bash(tail *)",
+      "Bash(wc *)",
+      "Bash(jq *)",
+      "Bash(node *)",
+      "Bash(tsx *)",
+      "Bash(ts-node *)",
+      "Bash(graphify query *)",
+      "Bash(graphify explain *)",
+      "Bash(graphify path *)",
+      "WebSearch",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:docs.anthropic.com)",
+      "WebFetch(domain:nextjs.org)",
+      "WebFetch(domain:drizzle.team)",
+      "WebFetch(domain:orm.drizzle.team)"
+    ],
+    "deny": [
+      "Bash(git push --force *)",
+      "Bash(git reset --hard *)",
+      "Bash(rm -rf *)",
+      "Read(graphify-out/graph.json)",
+      "Bash(cat graphify-out/graph.json)"
+    ],
+    "defaultMode": "acceptEdits"
+  },
+  "enabledPlugins": {
+    "frontend-design@claude-plugins-official": true
+  }
+}

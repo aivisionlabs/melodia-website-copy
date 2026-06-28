@@ -1,0 +1,2 @@
+ALTER TABLE "partner_api_orders" ALTER COLUMN "product_type" SET DEFAULT 'customer_templated_song';--> statement-breakpoint
+ALTER TABLE "partner_api_product_prices" ALTER COLUMN "product_type" SET DEFAULT 'customer_templated_song';

@@ -1,0 +1,1 @@
+ALTER TABLE "payments" ADD COLUMN "payment_provider" text DEFAULT 'razorpay';

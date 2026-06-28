@@ -1,0 +1,1 @@
+ALTER TABLE "songs" ADD COLUMN "play_count" integer DEFAULT 0;

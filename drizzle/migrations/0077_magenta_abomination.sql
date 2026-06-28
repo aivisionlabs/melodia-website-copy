@@ -1,0 +1,1 @@
+ALTER TABLE "partner_api_orders" ADD COLUMN "customer_mobile" text;

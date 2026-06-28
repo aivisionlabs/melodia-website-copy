@@ -1,0 +1,350 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Joyful Jam Session Brand Colors */
+  --primary-yellow: #FFD166;
+  --secondary-cream: #FDFDFD;
+  --accent-coral: #EF476F;
+  --text-teal: #073B4C;
+
+  /* Semantic Colors */
+  --success: #10B981;
+  --warning: #F59E0B;
+  --error: #EF4444;
+  --info: #3B82F6;
+
+  /* Neutral Colors */
+  --white: #FFFFFF;
+  --gray-50: #F9FAFB;
+  --gray-100: #F3F4F6;
+  --gray-200: #E5E7EB;
+  --gray-300: #D1D5DB;
+  --gray-400: #9CA3AF;
+  --gray-500: #6B7280;
+  --gray-600: #4B5563;
+  --gray-700: #374151;
+  --gray-800: #1F2937;
+  --gray-900: #111827;
+
+  /* CSS Variables for Tailwind */
+  --background: var(--secondary-cream);
+  --foreground: var(--text-teal);
+  --primary: var(--primary-yellow);
+  --primary-foreground: var(--text-teal);
+  --secondary: var(--secondary-cream);
+  --secondary-foreground: var(--text-teal);
+  --accent: var(--accent-coral);
+  --accent-foreground: var(--white);
+  --destructive: var(--error);
+  --destructive-foreground: var(--white);
+  --muted: var(--gray-100);
+  --muted-foreground: var(--gray-600);
+  --border: rgba(7, 59, 76, 0.2);
+  --input: rgba(7, 59, 76, 0.1);
+  --ring: var(--accent-coral);
+  --card: var(--secondary-cream);
+  --card-foreground: var(--text-teal);
+  --popover: var(--white);
+  --popover-foreground: var(--text-teal);
+
+  /* Design System Gradients */
+  --gradient-primary: linear-gradient(135deg, #FFD166 0%, #FFC107 50%, #FFB300 100%);
+  --gradient-secondary: linear-gradient(135deg, #FDFDFD 0%, #F8F9FA 50%, #E9ECEF 100%);
+  --gradient-accent: linear-gradient(135deg, #EF476F 0%, #E91E63 50%, #C2185B 100%);
+  --gradient-warm: linear-gradient(135deg, #FFD166 0%, #EF476F 50%, #073B4C 100%);
+
+  /* Design System Shadows */
+  --shadow-glow: 0 0 20px rgba(255, 209, 102, 0.3);
+  --shadow-elegant: 0 4px 6px -1px rgba(7, 59, 76, 0.1), 0 2px 4px -1px rgba(7, 59, 76, 0.06);
+  --shadow-coral: 0 4px 6px -1px rgba(239, 71, 111, 0.1), 0 2px 4px -1px rgba(239, 71, 111, 0.06);
+  --shadow-card: 0 1px 3px 0 rgba(7, 59, 76, 0.1), 0 1px 2px 0 rgba(7, 59, 76, 0.06);
+
+  /* Design System Transitions */
+  --transition-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+  /* Border Radius */
+  --radius: 0.75rem;
+}
+
+
+@keyframes bubbleFadeIn {
+  from { opacity: 0; transform: translateY(10px) scale(0.98); }
+  to   { opacity: 1; transform: translateY(0)   scale(1); }
+}
+.animate-bubble-in {
+  animation: bubbleFadeIn 0.35s ease-out both;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-montserrat), -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+/* Typography Classes */
+.font-heading {
+  font-family: var(--font-poppins), -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, sans-serif;
+}
+
+.font-body {
+  font-family: var(--font-montserrat), -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, sans-serif;
+}
+
+/* Heading Styles */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-poppins), -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, sans-serif;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--text-teal);
+}
+
+h1 {
+  font-size: 3rem; /* 48px */
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.25rem; /* 36px */
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.875rem; /* 30px */
+  font-weight: 600;
+}
+
+/* Body Text Styles */
+p, span, div {
+  font-family: var(--font-montserrat), -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, sans-serif;
+  color: var(--text-teal);
+}
+
+/* Brand Color Utilities */
+.text-primary {
+  color: var(--primary-yellow);
+}
+
+.text-secondary {
+  color: var(--secondary-cream);
+}
+
+.text-accent {
+  color: var(--accent-coral);
+}
+
+.text-teal {
+  color: var(--text-teal);
+}
+
+.bg-primary {
+  background-color: var(--primary-yellow);
+}
+
+.bg-secondary {
+  background-color: var(--secondary-cream);
+}
+
+.bg-accent {
+  background-color: var(--accent-coral);
+}
+
+.bg-teal {
+  background-color: var(--text-teal);
+}
+
+/* Gradient Utilities */
+.bg-gradient-primary {
+  background: var(--gradient-primary);
+}
+
+.bg-gradient-secondary {
+  background: var(--gradient-secondary);
+}
+
+.bg-gradient-accent {
+  background: var(--gradient-accent);
+}
+
+.bg-gradient-warm {
+  background: var(--gradient-warm);
+}
+
+/* Shadow Utilities */
+.shadow-glow {
+  box-shadow: var(--shadow-glow);
+}
+
+.shadow-elegant {
+  box-shadow: var(--shadow-elegant);
+}
+
+.shadow-coral {
+  box-shadow: var(--shadow-coral);
+}
+
+.shadow-card {
+  box-shadow: var(--shadow-card);
+}
+
+/* Animation Utilities */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.3s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes logo-mount {
+  0% {
+    opacity: 0;
+    transform: scale(0.9) translateY(-10px);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.02) translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.animate-logo-mount {
+  animation: logo-mount 0.8s ease-out forwards;
+}
+
+/* Voice Search Animations */
+@keyframes voice-pulse {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.05);
+  }
+}
+
+.animate-voice-pulse {
+  animation: voice-pulse 2s ease-in-out infinite;
+}
+
+/* Joyful Animation Styles */
+@keyframes float-up {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes scale-bounce {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-float-up {
+  animation: float-up 3s ease-out forwards;
+}
+
+.animate-spin-slow {
+  animation: spin-slow 3s linear infinite;
+}
+
+.animate-scale-bounce {
+  animation: scale-bounce 1s ease-in-out infinite;
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.6s ease-out forwards;
+}
+
+.animate-fade-in-up-delay {
+  animation: fade-in-up 0.6s ease-out 0.3s forwards;
+  opacity: 0;
+}
+
+/* Christmas Snowflake Animation */
+@keyframes float {
+  0% {
+    transform: translateY(0) translateX(0) rotate(0deg);
+    opacity: 0.7;
+  }
+  50% {
+    transform: translateY(-50vh) translateX(20px) rotate(180deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100vh) translateX(-20px) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.animate-float {
+  animation: float linear infinite;
+}
+
+/* Hide scrollbar while keeping scroll functionality */
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}

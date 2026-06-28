@@ -1,0 +1,1 @@
+ALTER TABLE "templated_song_instances" ADD COLUMN "singalong_lyrics_enabled" boolean DEFAULT true NOT NULL;

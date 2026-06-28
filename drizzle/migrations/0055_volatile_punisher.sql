@@ -1,0 +1,1 @@
+ALTER TABLE "templated_songs" ADD COLUMN "template_title" text;

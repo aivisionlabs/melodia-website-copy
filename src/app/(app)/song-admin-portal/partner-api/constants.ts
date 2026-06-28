@@ -1,0 +1,23 @@
+/** Occasion dropdown options (partner API create-order admin UI). */
+export const OCCASION_OPTIONS = [
+  "Kids Birthday",
+  "Adult Birthday",
+  "Weddings",
+  "Anniversary",
+  "Romantic",
+  "Kids",
+  "Party",
+  "Friendship",
+  "Apology",
+  "Corporate Events",
+  "Farewell",
+  "Lullaby",
+  "Siblings",
+  "Congratulations",
+  "Thank You",
+  "Motivational",
+  "Devotional/Spiritual",
+  "Festive/Holiday",
+  "Parents",
+  "Family",
+] as const;

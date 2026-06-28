@@ -1,0 +1,1 @@
+ALTER TABLE "song_requests" ADD COLUMN "selected_package" text;

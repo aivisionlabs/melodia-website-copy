@@ -1,0 +1,4 @@
+Contact: mailto:info@melodia-songs.com
+Expires: 2027-01-01T00:00:00.000Z
+Preferred-Languages: en, hi
+Canonical: https://www.melodia-songs.com/.well-known/security.txt

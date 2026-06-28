@@ -1,0 +1,685 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1729977360000,
+      "tag": "0000_special_stick",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1729977420000,
+      "tag": "0001_add_performance_indexes",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1729977480000,
+      "tag": "0002_add_melodia_app_tables",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1735494120000,
+      "tag": "0003_make_requester_name_optional",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1762051200000,
+      "tag": "0004_add_selected_package_to_song_requests",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1762178901951,
+      "tag": "0005_soft_tempest",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "7",
+      "when": 1762180036240,
+      "tag": "0006_romantic_valeria_richards",
+      "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "7",
+      "when": 1762351815599,
+      "tag": "0007_mean_greymalkin",
+      "breakpoints": true
+    },
+    {
+      "idx": 8,
+      "version": "7",
+      "when": 1762352000000,
+      "tag": "0008_create_packages_table_and_relationships",
+      "breakpoints": true
+    },
+    {
+      "idx": 9,
+      "version": "7",
+      "when": 1762352100000,
+      "tag": "0009_remove_selected_package_column",
+      "breakpoints": true
+    },
+    {
+      "idx": 10,
+      "version": "7",
+      "when": 1762352200000,
+      "tag": "0010_add_lyrics_edits_tracking",
+      "breakpoints": true
+    },
+    {
+      "idx": 11,
+      "version": "7",
+      "when": 1762352300000,
+      "tag": "0011_update_packages_599_and_999",
+      "breakpoints": true
+    },
+    {
+      "idx": 12,
+      "version": "7",
+      "when": 1762352400000,
+      "tag": "0012_add_payment_foreign_keys",
+      "breakpoints": true
+    },
+    {
+      "idx": 13,
+      "version": "7",
+      "when": 1762694400000,
+      "tag": "0013_create_user_song_variant_reviews",
+      "breakpoints": true
+    },
+    {
+      "idx": 14,
+      "version": "7",
+      "when": 1731206400000,
+      "tag": "0014_add_description_to_lyrics_drafts",
+      "breakpoints": true
+    },
+    {
+      "idx": 15,
+      "version": "7",
+      "when": 1763015713809,
+      "tag": "0015_add_user_song_id_to_songs",
+      "breakpoints": true
+    },
+    {
+      "idx": 16,
+      "version": "7",
+      "when": 1735689600000,
+      "tag": "0016_create_partners_table",
+      "breakpoints": true
+    },
+    {
+      "idx": 17,
+      "version": "7",
+      "when": 1735689700000,
+      "tag": "0017_create_partner_visits_table",
+      "breakpoints": true
+    },
+    {
+      "idx": 18,
+      "version": "7",
+      "when": 1735689800000,
+      "tag": "0018_add_partner_tracking_to_song_requests",
+      "breakpoints": true
+    },
+    {
+      "idx": 19,
+      "version": "7",
+      "when": 1763626732310,
+      "tag": "0019_funny_grandmaster",
+      "breakpoints": true
+    },
+    {
+      "idx": 20,
+      "version": "7",
+      "when": 1763634000000,
+      "tag": "0020_change_requests_fulfillment_audit",
+      "breakpoints": true
+    },
+    {
+      "idx": 21,
+      "version": "7",
+      "when": 1762051300000,
+      "tag": "0004_strange_gorgon",
+      "breakpoints": true
+    },
+    {
+      "idx": 22,
+      "version": "7",
+      "when": 1762179000000,
+      "tag": "0005_normal_switch",
+      "breakpoints": true
+    },
+    {
+      "idx": 23,
+      "version": "7",
+      "when": 1762351900000,
+      "tag": "0007_add_download_allowed_to_songs",
+      "breakpoints": true
+    },
+    {
+      "idx": 24,
+      "version": "7",
+      "when": 1762351910000,
+      "tag": "0007_certain_amazoness",
+      "breakpoints": true
+    },
+    {
+      "idx": 25,
+      "version": "7",
+      "when": 1763641772981,
+      "tag": "0025_clever_wither",
+      "breakpoints": true
+    },
+    {
+      "idx": 26,
+      "version": "7",
+      "when": 1763642081666,
+      "tag": "0026_faithful_the_captain",
+      "breakpoints": true
+    },
+    {
+      "idx": 27,
+      "version": "7",
+      "when": 1763650607994,
+      "tag": "0027_smiling_thunderbolts",
+      "breakpoints": true
+    },
+    {
+      "idx": 28,
+      "version": "7",
+      "when": 1763650800000,
+      "tag": "0021_song_request_songs_junction",
+      "breakpoints": true
+    },
+    {
+      "idx": 29,
+      "version": "7",
+      "when": 1763651000000,
+      "tag": "0028_remove_actor_fields_from_audit_log",
+      "breakpoints": true
+    },
+    {
+      "idx": 30,
+      "version": "7",
+      "when": 1763651100000,
+      "tag": "0029_change_delivery_date_to_date",
+      "breakpoints": true
+    },
+    {
+      "idx": 31,
+      "version": "7",
+      "when": 1763920300675,
+      "tag": "0031_cold_maria_hill",
+      "breakpoints": true
+    },
+    {
+      "idx": 32,
+      "version": "7",
+      "when": 1764059212222,
+      "tag": "0032_magenta_magik",
+      "breakpoints": true
+    },
+    {
+      "idx": 33,
+      "version": "7",
+      "when": 1765015040435,
+      "tag": "0033_happy_cammi",
+      "breakpoints": true
+    },
+    {
+      "idx": 34,
+      "version": "7",
+      "when": 1765099137769,
+      "tag": "0034_lying_molly_hayes",
+      "breakpoints": true
+    },
+    {
+      "idx": 35,
+      "version": "7",
+      "when": 1765115716730,
+      "tag": "0035_concerned_argent",
+      "breakpoints": true
+    },
+    {
+      "idx": 36,
+      "version": "7",
+      "when": 1765116034328,
+      "tag": "0036_provider-event-id",
+      "breakpoints": true
+    },
+    {
+      "idx": 37,
+      "version": "7",
+      "when": 1765193603096,
+      "tag": "0037_sudden_shape",
+      "breakpoints": true
+    },
+    {
+      "idx": 38,
+      "version": "7",
+      "when": 1765265149538,
+      "tag": "0038_tearful_ma_gnuci",
+      "breakpoints": true
+    },
+    {
+      "idx": 39,
+      "version": "7",
+      "when": 1765265200000,
+      "tag": "0039_update_packages_pricing_and_slugs",
+      "breakpoints": true
+    },
+    {
+      "idx": 40,
+      "version": "7",
+      "when": 1765979605343,
+      "tag": "0040_bent_talkback",
+      "breakpoints": true
+    },
+    {
+      "idx": 41,
+      "version": "7",
+      "when": 1766052203476,
+      "tag": "0041_strange_gressill",
+      "breakpoints": true
+    },
+    {
+      "idx": 42,
+      "version": "7",
+      "when": 1766052252001,
+      "tag": "0042_greedy_felicia_hardy",
+      "breakpoints": true
+    },
+    {
+      "idx": 43,
+      "version": "7",
+      "when": 1766820880658,
+      "tag": "0043_gorgeous_zemo",
+      "breakpoints": true
+    },
+    {
+      "idx": 44,
+      "version": "7",
+      "when": 1766936635993,
+      "tag": "0044_sparkling_carlie_cooper",
+      "breakpoints": true
+    },
+    {
+      "idx": 45,
+      "version": "7",
+      "when": 1767349123481,
+      "tag": "0045_brainy_stick",
+      "breakpoints": true
+    },
+    {
+      "idx": 46,
+      "version": "7",
+      "when": 1768506157158,
+      "tag": "0046_admin_portal_perf_indexes",
+      "breakpoints": true
+    },
+    {
+      "idx": 47,
+      "version": "7",
+      "when": 1768048165702,
+      "tag": "0047_short_miek",
+      "breakpoints": true
+    },
+    {
+      "idx": 48,
+      "version": "7",
+      "when": 1768820354024,
+      "tag": "0048_fat_amazoness",
+      "breakpoints": true
+    },
+    {
+      "idx": 49,
+      "version": "7",
+      "when": 1768893875110,
+      "tag": "0049_add_custom_lyrics_to_lyrics_drafts",
+      "breakpoints": true
+    },
+    {
+      "idx": 50,
+      "version": "7",
+      "when": 1768980802540,
+      "tag": "0050_wise_marauders",
+      "breakpoints": true
+    },
+    {
+      "idx": 51,
+      "version": "7",
+      "when": 1769446186916,
+      "tag": "0051_shiny_joystick",
+      "breakpoints": true
+    },
+    {
+      "idx": 52,
+      "version": "7",
+      "when": 1769510227315,
+      "tag": "0052_add_blog_posts_table",
+      "breakpoints": true
+    },
+    {
+      "idx": 53,
+      "version": "7",
+      "when": 1769510300000,
+      "tag": "0053_fix_blog_posts_published",
+      "breakpoints": true
+    },
+    {
+      "idx": 54,
+      "version": "7",
+      "when": 1770642592336,
+      "tag": "0054_handy_zaran",
+      "breakpoints": true
+    },
+    {
+      "idx": 55,
+      "version": "7",
+      "when": 1770642900403,
+      "tag": "0055_volatile_punisher",
+      "breakpoints": true
+    },
+    {
+      "idx": 56,
+      "version": "7",
+      "when": 1770748474119,
+      "tag": "0056_chubby_warbound",
+      "breakpoints": true
+    },
+    {
+      "idx": 57,
+      "version": "7",
+      "when": 1770808378255,
+      "tag": "0057_templated_song_categories",
+      "breakpoints": true
+    },
+    {
+      "idx": 58,
+      "version": "7",
+      "when": 1770809513672,
+      "tag": "0058_templated_songs_language",
+      "breakpoints": true
+    },
+    {
+      "idx": 59,
+      "version": "7",
+      "when": 1770972983397,
+      "tag": "0059_add_song_requirements_to_lyrics_drafts",
+      "breakpoints": true
+    },
+    {
+      "idx": 60,
+      "version": "7",
+      "when": 1771072300446,
+      "tag": "0060_stormy_clint_barton",
+      "breakpoints": true
+    },
+    {
+      "idx": 61,
+      "version": "7",
+      "when": 1774181717985,
+      "tag": "0061_curly_nextwave",
+      "breakpoints": true
+    },
+    {
+      "idx": 62,
+      "version": "7",
+      "when": 1774202243918,
+      "tag": "0062_lazy_jimmy_woo",
+      "breakpoints": true
+    },
+    {
+      "idx": 63,
+      "version": "7",
+      "when": 1774256423860,
+      "tag": "0063_supreme_secret_warriors",
+      "breakpoints": true
+    },
+    {
+      "idx": 64,
+      "version": "7",
+      "when": 1774259059352,
+      "tag": "0064_aspiring_clea",
+      "breakpoints": true
+    },
+    {
+      "idx": 65,
+      "version": "7",
+      "when": 1774272925283,
+      "tag": "0065_advanced_music_language_settings",
+      "breakpoints": true
+    },
+    {
+      "idx": 66,
+      "version": "7",
+      "when": 1774348459877,
+      "tag": "0066_lyrics_two_phase_architecture",
+      "breakpoints": true
+    },
+    {
+      "idx": 67,
+      "version": "7",
+      "when": 1774544553795,
+      "tag": "0067_glamorous_warpath",
+      "breakpoints": true
+    },
+    {
+      "idx": 68,
+      "version": "7",
+      "when": 1774545299096,
+      "tag": "0068_cooing_daredevil",
+      "breakpoints": true
+    },
+    {
+      "idx": 69,
+      "version": "7",
+      "when": 1773758456234,
+      "tag": "0069_narrow_blob",
+      "breakpoints": true
+    },
+    {
+      "idx": 70,
+      "version": "7",
+      "when": 1774875787673,
+      "tag": "0070_futuristic_nighthawk",
+      "breakpoints": true
+    },
+    {
+      "idx": 71,
+      "version": "7",
+      "when": 1775223260286,
+      "tag": "0071_milky_microbe",
+      "breakpoints": true
+    },
+    {
+      "idx": 72,
+      "version": "7",
+      "when": 1775714727482,
+      "tag": "0072_rapid_mesmero",
+      "breakpoints": true
+    },
+    {
+      "idx": 73,
+      "version": "7",
+      "when": 1744185600000,
+      "tag": "0073_vendor_feedback_actor",
+      "breakpoints": true
+    },
+    {
+      "idx": 74,
+      "version": "7",
+      "when": 1775751868067,
+      "tag": "0074_handy_magneto",
+      "breakpoints": true
+    },
+    {
+      "idx": 75,
+      "version": "7",
+      "when": 1775821832406,
+      "tag": "0075_polite_scarlet_spider",
+      "breakpoints": true
+    },
+    {
+      "idx": 76,
+      "version": "7",
+      "when": 1775993435176,
+      "tag": "0076_melodic_cassandra_nova",
+      "breakpoints": true
+    },
+    {
+      "idx": 77,
+      "version": "7",
+      "when": 1776267192264,
+      "tag": "0077_magenta_abomination",
+      "breakpoints": true
+    },
+    {
+      "idx": 78,
+      "version": "7",
+      "when": 1776760642665,
+      "tag": "0078_free_marten_broadcloak",
+      "breakpoints": true
+    },
+    {
+      "idx": 79,
+      "version": "7",
+      "when": 1777128068847,
+      "tag": "0079_happy_kat_farrell",
+      "breakpoints": true
+    },
+    {
+      "idx": 80,
+      "version": "7",
+      "when": 1777450447046,
+      "tag": "0080_square_mantis",
+      "breakpoints": true
+    },
+    {
+      "idx": 81,
+      "version": "7",
+      "when": 1778511171650,
+      "tag": "0081_clammy_omega_sentinel",
+      "breakpoints": true
+    },
+    {
+      "idx": 82,
+      "version": "7",
+      "when": 1778914222060,
+      "tag": "0082_chilly_ozymandias",
+      "breakpoints": true
+    },
+    {
+      "idx": 83,
+      "version": "7",
+      "when": 1747526400000,
+      "tag": "0083_templated_categories_order",
+      "breakpoints": true
+    },
+    {
+      "idx": 84,
+      "version": "7",
+      "when": 1779111155662,
+      "tag": "0084_absurd_captain_universe",
+      "breakpoints": true
+    },
+    {
+      "idx": 85,
+      "version": "7",
+      "when": 1779172242958,
+      "tag": "0085_ordinary_slayback",
+      "breakpoints": true
+    },
+    {
+      "idx": 86,
+      "version": "7",
+      "when": 1780226915188,
+      "tag": "0086_yellow_colleen_wing",
+      "breakpoints": true
+    },
+    {
+      "idx": 87,
+      "version": "7",
+      "when": 1780317172564,
+      "tag": "0087_curious_lethal_legion",
+      "breakpoints": true
+    },
+    {
+      "idx": 88,
+      "version": "7",
+      "when": 1780549920088,
+      "tag": "0088_yummy_boomer",
+      "breakpoints": true
+    },
+    {
+      "idx": 89,
+      "version": "7",
+      "when": 1781003821709,
+      "tag": "0089_lovely_warbird",
+      "breakpoints": true
+    },
+    {
+      "idx": 90,
+      "version": "7",
+      "when": 1780599379581,
+      "tag": "0089_smiling_pyro",
+      "breakpoints": true
+    },
+    {
+      "idx": 91,
+      "version": "7",
+      "when": 1780836525023,
+      "tag": "0090_song_variation_system",
+      "breakpoints": true
+    },
+    {
+      "idx": 92,
+      "version": "7",
+      "when": 1780900000000,
+      "tag": "0091_blog_category",
+      "breakpoints": true
+    },
+    {
+      "idx": 93,
+      "version": "7",
+      "when": 1749600000000,
+      "tag": "0092_add_invoice_mobile_to_vendors",
+      "breakpoints": true
+    },
+    {
+      "idx": 94,
+      "version": "7",
+      "when": 1749686400000,
+      "tag": "0093_rj_show_intake_tables",
+      "breakpoints": true
+    },
+    {
+      "idx": 95,
+      "version": "7",
+      "when": 1749772800000,
+      "tag": "0094_rj_show_intake_reorder",
+      "breakpoints": true
+    },
+    {
+      "idx": 96,
+      "version": "7",
+      "when": 1781516641852,
+      "tag": "0096_add_templated_songs_tags",
+      "breakpoints": true
+    }
+  ]
+}

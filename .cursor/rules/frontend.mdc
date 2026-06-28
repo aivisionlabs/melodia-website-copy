@@ -1,0 +1,13 @@
+---
+description: Next.js App Router pages, layouts, and React components — routing and UI conventions
+alwaysApply: false
+globs:
+  - "src/components/**/*.{tsx,jsx}"
+  - "src/app/**/*.{tsx,jsx}"
+---
+# Frontend
+
+- Follow Next.js App Router standards for routes and pages (project uses Next 16 — layouts, `page.tsx`, server vs client components, loading/error boundaries as appropriate).
+- Match existing route and file conventions in this repo; keep types strict.
+
+UI/analytics/theme: use [.cursor/rules/add-events.mdc](.cursor/rules/add-events.mdc) and [.cursor/rules/brand-kit.mdc](.cursor/rules/brand-kit.mdc) when those apply.

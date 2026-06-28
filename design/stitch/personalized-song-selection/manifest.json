@@ -1,0 +1,54 @@
+{
+  "projectId": "17118900691198357742",
+  "projectTitle": "Personalized Song Selection",
+  "screens": [
+    {
+      "id": "19f602088e0b4f0c935cde37400f0521",
+      "slug": "01-song-personalization-reorganized-hero-occasion-flow",
+      "title": "Song Personalization - Reorganized Hero & Occasion Flow",
+      "width": "780",
+      "height": "1768",
+      "deviceType": "MOBILE",
+      "screenshotPath": "screenshots/01-song-personalization-reorganized-hero-occasion-flow.png",
+      "codePath": "code/01-song-personalization-reorganized-hero-occasion-flow.html",
+      "screenshotUrl": "https://lh3.googleusercontent.com/aida/ADBb0uieFCyPWzGUVkFKBT8ejOkCw3lTnRvGkJ7NBAfDIQiRCcuG8ln1otlBqKj58dlx1mMW4TnlfhbmlxYYUmbax899UOudCNEiMX_ssyrWD0qPJgFKlChOC7iIkqSNpwLvWzn38G2bPAKH7p0oMXHLU19ApZD4ZFFuEhSMqlECabrf9szPBkbea0omzSML8YnLeF5fqC81KeZwyCYrtdsAdWKwocTlHA4Q7C0YA_J0J1d-BMg4WJvwOSvrLAI",
+      "htmlCodeUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzAwMDY1MmNmNDgzZWNlYmQwNzA5MWI5MTQ3MWE5OTdmEgsSBxCzpq_K7A4YAZIBJAoKcHJvamVjdF9pZBIWQhQxNzExODkwMDY5MTE5ODM1Nzc0Mg&filename=&opi=89354086"
+    },
+    {
+      "id": "83285dc0792c4557937da443eba13f76",
+      "slug": "02-song-personalization-tightened-delivery-estimate",
+      "title": "Song Personalization - Tightened Delivery Estimate",
+      "width": "780",
+      "height": "1768",
+      "deviceType": "MOBILE",
+      "screenshotPath": "screenshots/02-song-personalization-tightened-delivery-estimate.png",
+      "codePath": "code/02-song-personalization-tightened-delivery-estimate.html",
+      "screenshotUrl": "https://lh3.googleusercontent.com/aida/ADBb0uhOa3nv26uhGTINLF3v8DeyEVblKSkHBtcf-Tts0ut_WBJrZhy78AxW8jHdZTpfVnlSSRyw8XHQsTG2zVzni8APJsZ8nPDGm2SBLNS9NO5AckEwnJjFmHPsAPICudwCrQ2zl1VMesm7V-_Ae_UjSucbyK-g5V5g3kjBvAuIU8kKD39qiWnqHI2-uF1ZThnIrXvmYMqHHSUZJ0O6j0FoMm4SJpq_ECZ_yiuhvF0kdU2LjHj1YVsJEIrmo_7l",
+      "htmlCodeUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzAwMDY1MmNmNDg0YzEwNDAwMWVlNjhjNjBlMDVkOTZkEgsSBxCzpq_K7A4YAZIBJAoKcHJvamVjdF9pZBIWQhQxNzExODkwMDY5MTE5ODM1Nzc0Mg&filename=&opi=89354086"
+    },
+    {
+      "id": "e44bee8fa9084f7b8a189299b73e61e2",
+      "slug": "03-song-options-simplified-hierarchy-radical-variants",
+      "title": "Song Options - Simplified Hierarchy & Radical Variants",
+      "width": "980",
+      "height": "5642",
+      "deviceType": "MOBILE",
+      "screenshotPath": "screenshots/03-song-options-simplified-hierarchy-radical-variants.png",
+      "codePath": "code/03-song-options-simplified-hierarchy-radical-variants.html",
+      "screenshotUrl": "https://lh3.googleusercontent.com/aida/ADBb0uj3QUu49L_J904aCnozUmcJyRsd1qmkpPXRgj96HmfLfdVrkc27Me3eOGQiD4BrolyqVQ1rAMLvNnJw1-xdGFLDPTLt6CBUYbxX7QHxhr9_4DMBuiwg2hCvoVR0Wigr3rND91QhJ1gU3OYc61oJIBJuWtyF2eT4GAe2Z-Jr2_aD8oIR28xnrYh0oH6vM2fVLe1PzUdzCuyEEY7NFpwG9lGQ_HjdEkQr6953PwygEBtJzIrI664Kr2azYmGp",
+      "htmlCodeUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzAwMDY1MmQxZmUxNWI0YjgwMmE5YjdhMWYyMGNlMTQzEgsSBxCzpq_K7A4YAZIBJAoKcHJvamVjdF9pZBIWQhQxNzExODkwMDY5MTE5ODM1Nzc0Mg&filename=&opi=89354086"
+    },
+    {
+      "id": "2052749371cf465cb2ca032b37e36686",
+      "slug": "04-tell-us-more-about-recipient-simplified",
+      "title": "Tell us more about the recipient - Simplified",
+      "width": "780",
+      "height": "1768",
+      "deviceType": "MOBILE",
+      "screenshotPath": "screenshots/04-tell-us-more-about-recipient-simplified.png",
+      "codePath": "code/04-tell-us-more-about-recipient-simplified.html",
+      "screenshotUrl": "https://lh3.googleusercontent.com/aida/ADBb0uipeKF1Hj3kLaSoHxnetU0XCLuLEmU0zsjffTY2k65Jol2qiXJYzRGJDepvVMiO8f3sbHFmlbuog1fiFEZN8trSQ0b68IH6BBSUITQOvASQCDpK2b40DhrboNXVWagkaC5un3a3uJ3-d_m1ipDcxAPeyOdMSMnoNaNrPpoOlAY2kBWAjsC52MHCa2ZYGGGi4LhuoMq8zs87PrNUgIMboAGgyAciolsiamh84tKHWqADb6DnPgJMFnxk4WOb",
+      "htmlCodeUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzAwMDY1MmQxYzczOWNhNmUwMzM4NThhMjNmMDIwNDQzEgsSBxCzpq_K7A4YAZIBJAoKcHJvamVjdF9pZBIWQhQxNzExODkwMDY5MTE5ODM1Nzc0Mg&filename=&opi=89354086"
+    }
+  ]
+}

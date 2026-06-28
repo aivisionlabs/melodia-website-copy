@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15
+    container_name: melodia-postgres
+    environment:
+      POSTGRES_DB: melodia
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: melodia2024
+    ports:
+      - "5433:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    command: postgres -c shared_preload_libraries=pg_stat_statements
+    restart: unless-stopped
+
+  # Optional: pgAdmin for database management
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    container_name: melodia-pgadmin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@melodia.com
+      PGADMIN_DEFAULT_PASSWORD: melodia2024
+    ports:
+      - "8080:80"
+    depends_on:
+      - postgres
+    restart: unless-stopped
+
+volumes:
+  postgres_data:

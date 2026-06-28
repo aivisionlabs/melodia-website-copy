@@ -1,0 +1,13 @@
+---
+description: Melodia UI branding and visual consistency—use when editing pages, components, global styles, Tailwind theme, or design-system tokens (colors, typography, motion, shared primitives).
+globs: src/app/**/*.tsx, src/components/**/*.tsx, src/**/*.css, tailwind.config.*, src/lib/design-system.ts
+alwaysApply: false
+---
+
+Before changing visuals, layout, or component styling:
+
+- Read @joyful-jam-session-brand-kit.md for brand colors, tone, and visual guidelines.
+- Use @src/lib/design-system.ts for shared tokens, transitions, and UI building blocks.
+- Use CSS variables from @src/app/globals.css (colors, spacing, typography) to stay consistent with the theme.
+
+Prefer patterns already established in those files rather than one-off styling.

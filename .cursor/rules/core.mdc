@@ -1,0 +1,40 @@
+---
+alwaysApply: true
+---
+# Melodia — core
+
+- Product: India-focused AI custom songs; 20+ Indian languages; lyrics (Gemini / Vertex); audio (Suno).
+- Stack: Next.js 16 App Router · React 19 · TS · PostgreSQL/Drizzle · NextAuth v4 · Razorpay/Cashfree · Resend · Upstash Redis · ElevenLabs TTS · Cloudflare R2 · Tailwind/Radix.
+
+## Commands
+- Dev/build/lint: `npm run dev` · `npm run build` · `npm run lint`
+- DB: `npm run db:generate` · `npm run db:migrate` · `npm run db:push` · `npm run db:studio`
+- Integration scripts: see `package.json` (`test:emails`, `test:webhook`, `test:vendor-api`, etc.)
+
+## Conventions
+- `@/` maps to `src/`. Route param: `song-options` uses `[songId]`, not `[id]`.
+- Auth: `useAuth()` → `src/contexts/AuthContext.tsx`; anon → `getAnonymousCookie()` → `src/lib/auth/cookies.ts`.
+- On **song generation failure**: call `failPartnerOrderIfLinked` and `maybeNotifyOpsUserSongGenerationFailed`.
+- **DB changes**: create migrations via Drizzle only — never hand-write migration files.
+- **API logging**: add logs using the project logging system whenever API code is added or changed.
+
+## Docs (on demand)
+`docs/api-routes.md` · `docs/schema.md` · `docs/testing-guide.md` · `docs/ENVIRONMENT_VARIABLES.md` · `graphify-out/GRAPH_REPORT.md`
+
+## Knowledge graph (optional)
+A pre-built graph lives in `graphify-out/` (`GRAPH_REPORT.md`). Default to grep/Read/find — use graphify only when the question needs it.
+
+**Use graphify** (`graphify query "..."` or `/q`) for multi-file architecture: "how does X flow work?", "what calls Y?", cross-service traces spanning many files.
+
+**Skip graphify** for known file paths, simple symbol lookups, single-file edits, or queries dominated by generic terms (`config`, `utils`, `index`) that cause wrong node matches.
+
+Never read `graphify-out/graph.json` directly — it is 3.9 MB. See `graphify-benchmarks.md` for when graphify wins vs grep.
+
+## Token efficiency
+- Prefer smallest edits: targeted diffs, reuse existing helpers; do not rewrite whole files for small fixes.
+- Batch file reads; avoid interleaving many single-file round trips when parallel batch works.
+- Prefer CLI (e.g. `gh`) over MCP when both can do the job.
+- Do not re-paste large blocks the user already attached — reference by path and line range.
+
+## Deep architecture
+For flows, tables, APIs, and legacy notes use rule **@melodia-project-context** or open [.cursor/rules/melodia-project-context.mdc](.cursor/rules/melodia-project-context.mdc).

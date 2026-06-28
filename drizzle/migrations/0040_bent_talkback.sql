@@ -1,0 +1,4 @@
+ALTER TABLE "lyrics_drafts" ADD COLUMN "original_version_id" integer;--> statement-breakpoint
+ALTER TABLE "song_requests" ADD COLUMN "selected_lyrics_draft_id" integer;--> statement-breakpoint
+ALTER TABLE "lyrics_drafts" ADD CONSTRAINT "lyrics_drafts_original_version_id_lyrics_drafts_id_fk" FOREIGN KEY ("original_version_id") REFERENCES "public"."lyrics_drafts"("id") ON DELETE no action ON UPDATE no action;--> statement-breakpoint
+ALTER TABLE "song_requests" ADD CONSTRAINT "song_requests_selected_lyrics_draft_id_lyrics_drafts_id_fk" FOREIGN KEY ("selected_lyrics_draft_id") REFERENCES "public"."lyrics_drafts"("id") ON DELETE no action ON UPDATE no action;

@@ -1,0 +1,12 @@
+---
+description: Next.js route handlers, API contracts, validation, and server-side lib aligned with API work
+alwaysApply: false
+globs:
+  - "src/app/api/**/*.ts"
+  - "src/lib/**/*-actions.ts"
+---
+# Backend / API
+
+- Validate inputs for every handler; return consistent JSON error shapes the codebase already uses.
+- Before adding or renaming routes, read [docs/api-routes.md](docs/api-routes.md).
+- Logging and DB migrations: follow conventions in [.cursor/rules/core.mdc](.cursor/rules/core.mdc).

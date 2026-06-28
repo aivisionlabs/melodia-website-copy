@@ -1,0 +1,254 @@
+[
+  {
+    "index": 0,
+    "text": "[Verse 1]",
+    "start": 11145,
+    "end": 11145
+  },
+  {
+    "index": 1,
+    "text": "Today's your day",
+    "start": 11145,
+    "end": 14117
+  },
+  {
+    "index": 2,
+    "text": "Blue is here",
+    "start": 14117,
+    "end": 15603
+  },
+  {
+    "index": 3,
+    "text": "Lion roars",
+    "start": 17089,
+    "end": 20062
+  },
+  {
+    "index": 4,
+    "text": "Birthday cheer",
+    "start": 20062,
+    "end": 22291
+  },
+  {
+    "index": 6,
+    "text": "[Chorus]",
+    "start": 22291,
+    "end": 23034
+  },
+  {
+    "index": 7,
+    "text": "Nirvan, Nirvan",
+    "start": 23034,
+    "end": 24520
+  },
+  {
+    "index": 8,
+    "text": "*clap clap clap*",
+    "start": 24520,
+    "end": 26006
+  },
+  {
+    "index": 9,
+    "text": "Blue lion dance",
+    "start": 26006,
+    "end": 28235
+  },
+  {
+    "index": 10,
+    "text": "Happy birthday",
+    "start": 28235,
+    "end": 31207
+  },
+  {
+    "index": 11,
+    "text": "*clap clap clap*",
+    "start": 31207,
+    "end": 31950
+  },
+  {
+    "index": 12,
+    "text": "Mummy Papa sing",
+    "start": 31950,
+    "end": 35665
+  },
+  {
+    "index": 14,
+    "text": "[Verse 2]",
+    "start": 35665,
+    "end": 35665
+  },
+  {
+    "index": 15,
+    "text": "Two years old",
+    "start": 35665,
+    "end": 37151
+  },
+  {
+    "index": 16,
+    "text": "Growing strong",
+    "start": 37894,
+    "end": 40867
+  },
+  {
+    "index": 17,
+    "text": "Blue balloons",
+    "start": 40867,
+    "end": 43839
+  },
+  {
+    "index": 18,
+    "text": "Birthday song",
+    "start": 43839,
+    "end": 46068
+  },
+  {
+    "index": 20,
+    "text": "[Chorus]",
+    "start": 46811,
+    "end": 46811
+  },
+  {
+    "index": 21,
+    "text": "Nirvan, Nirvan",
+    "start": 46811,
+    "end": 49040
+  },
+  {
+    "index": 22,
+    "text": "*clap clap clap*",
+    "start": 49040,
+    "end": 50526
+  },
+  {
+    "index": 23,
+    "text": "Blue lion dance",
+    "start": 50526,
+    "end": 53498
+  },
+  {
+    "index": 24,
+    "text": "Happy birthday",
+    "start": 53498,
+    "end": 54984
+  },
+  {
+    "index": 25,
+    "text": "*clap clap clap*",
+    "start": 55727,
+    "end": 56470
+  },
+  {
+    "index": 26,
+    "text": "Mummy Papa sing",
+    "start": 56470,
+    "end": 58700
+  },
+  {
+    "index": 28,
+    "text": "[Bridge]",
+    "start": 58700,
+    "end": 62415
+  },
+  {
+    "index": 29,
+    "text": "Roar like lion",
+    "start": 65387,
+    "end": 72817
+  },
+  {
+    "index": 30,
+    "text": "*ROAR!*",
+    "start": 72817,
+    "end": 74303
+  },
+  {
+    "index": 31,
+    "text": "Jump so high",
+    "start": 74303,
+    "end": 75789
+  },
+  {
+    "index": 32,
+    "text": "Blue sky flying",
+    "start": 76532,
+    "end": 78762
+  },
+  {
+    "index": 33,
+    "text": "Birthday time",
+    "start": 79505,
+    "end": 81734
+  },
+  {
+    "index": 35,
+    "text": "[Chorus]",
+    "start": 81734,
+    "end": 82477
+  },
+  {
+    "index": 36,
+    "text": "Nirvan, Nirvan",
+    "start": 94365,
+    "end": 95851
+  },
+  {
+    "index": 37,
+    "text": "*clap clap clap*",
+    "start": 95851,
+    "end": 97338
+  },
+  {
+    "index": 38,
+    "text": "Blue lion dance",
+    "start": 97338,
+    "end": 99567
+  },
+  {
+    "index": 39,
+    "text": "Happy birthday",
+    "start": 100310,
+    "end": 102539
+  },
+  {
+    "index": 40,
+    "text": "*clap clap clap*",
+    "start": 102539,
+    "end": 102539
+  },
+  {
+    "index": 41,
+    "text": "Mummy Papa sing",
+    "start": 102539,
+    "end": 102539
+  },
+  {
+    "index": 43,
+    "text": "[Outro]",
+    "start": 102539,
+    "end": 102539
+  },
+  {
+    "index": 44,
+    "text": "Happy birthday",
+    "start": 102539,
+    "end": 102539
+  },
+  {
+    "index": 45,
+    "text": "Nirvan beta",
+    "start": 102539,
+    "end": 107740
+  },
+  {
+    "index": 46,
+    "text": "*clap clap clap*",
+    "start": 107740,
+    "end": 113684
+  },
+  {
+    "index": 47,
+    "text": "Blue lion king!",
+    "start": 240001,
+    "end": 113684
+  }
+]

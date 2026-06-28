@@ -1,0 +1,1 @@
+ALTER TABLE "lyrics_drafts" ADD COLUMN "custom_lyrics" boolean DEFAULT false;

@@ -1,0 +1,281 @@
+<!DOCTYPE html><html class="light" lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport">
+<title>Melodia - Personalize Your Track</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-fixed-dim": "#edc157",
+                        "on-surface-variant": "#4e4636",
+                        "on-surface": "#1c1c18",
+                        "outline-variant": "#d1c5b1",
+                        "error": "#ba1a1a",
+                        "on-primary-fixed": "#251a00",
+                        "vibrant-coral": "#EF476F",
+                        "on-secondary-container": "#5a001e",
+                        "on-error": "#ffffff",
+                        "on-secondary-fixed": "#400013",
+                        "surface-container-high": "#ebe8e1",
+                        "paper-white": "#FCF9F2",
+                        "on-primary-container": "#765900",
+                        "background": "#fcf9f2",
+                        "surface-container-low": "#f6f3ec",
+                        "on-background": "#1c1c18",
+                        "inverse-primary": "#edc157",
+                        "on-error-container": "#93000a",
+                        "surface-tint": "#785a00",
+                        "secondary-container": "#fd5179",
+                        "inverse-on-surface": "#f3f0ea",
+                        "tertiary-fixed": "#bde9ff",
+                        "tertiary-container": "#b2ddf3",
+                        "surface": "#fcf9f2",
+                        "on-tertiary-container": "#386275",
+                        "primary-fixed": "#ffdf9b",
+                        "on-secondary": "#ffffff",
+                        "primary-container": "#ffd166",
+                        "on-secondary-fixed-variant": "#910034",
+                        "surface-bright": "#fcf9f2",
+                        "secondary-fixed": "#ffd9dd",
+                        "on-tertiary-fixed": "#001f2a",
+                        "surface-container": "#f0eee7",
+                        "secondary": "#b71849",
+                        "outline": "#807664",
+                        "surface-container-lowest": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "on-primary-fixed-variant": "#5b4300",
+                        "tertiary-fixed-dim": "#a2cde2",
+                        "bright-yellow": "#FFD166",
+                        "surface-variant": "#e5e2db",
+                        "on-primary": "#ffffff",
+                        "inverse-surface": "#31312c",
+                        "on-tertiary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#1f4c5d",
+                        "tertiary": "#396476",
+                        "secondary-fixed-dim": "#ffb2bc",
+                        "dark-teal": "#073B4C",
+                        "primary": "#785a00",
+                        "surface-dim": "#dcdad3",
+                        "surface-container-highest": "#e5e2db"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-desktop": "40px",
+                        "base": "8px",
+                        "margin-mobile": "16px",
+                        "gutter": "24px",
+                        "container-max": "1280px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Montserrat"],
+                        "headline-lg": ["Montserrat"],
+                        "display-lg-mobile": ["Montserrat"],
+                        "display-lg": ["Montserrat"],
+                        "label-sm": ["Plus Jakarta Sans"],
+                        "body-md": ["Plus Jakarta Sans"],
+                        "label-lg": ["Plus Jakarta Sans"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "sans": ["Montserrat", "ui-sans-serif", "system-ui"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "700" }],
+                        "display-lg-mobile": ["36px", { "lineHeight": "42px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "500" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }]
+                    }
+                },
+            },
+        };
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .custom-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .floating-action-bar {
+            background: linear-gradient(to top, #fcf9f2 90%, rgba(252, 249, 242, 0));
+        }
+        body {
+            min-height: 100dvh;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .hero-input::placeholder {
+            color: rgba(7, 59, 76, 0.2);
+            font-weight: 800;
+        }
+    </style>
+</head>
+<body class="bg-background text-dark-teal overflow-x-hidden flex flex-col h-screen">
+<!-- Top App Bar -->
+<header class="top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-surface-container shrink-0">
+<div class="flex items-center justify-between px-margin-mobile h-16 w-full">
+<div class="flex items-center gap-2">
+<img alt="MelodyGift Logo" class="h-8 w-8 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTlQrBqD9EFn50lGBBywyRpioxXujuCNF5cQCDk1sihd4oXslk_aTLulp13ajm2JStWky05x22pa8vZtl2lPAKhtg8lO6Xfq_cxfMLXXE0vj6YoiZdazv1sDqii_ezp3-BzCUrwoxXDvlnOonrF0BA0A0oDrQ6DloX5sHB9Ydli5-PUn9IZYuK8Rfv7xRFq7dMEvtYNm3Pl4rU8UbO8a0xE8xzteQFP61LTzS7Mt-7Eft1AQDXSMADv_BMC4gHsWmAO4gn3IhhP0I8pdc">
+</div>
+<div class="h-10 w-10 rounded-full bg-bright-yellow flex items-center justify-center overflow-hidden border-2 border-white shadow-sm">
+<span class="material-symbols-outlined text-dark-teal">person</span>
+</div>
+</div>
+</header>
+<main class="flex-grow overflow-y-auto flex flex-col">
+<!-- Simplified Hero Section -->
+<section class="bg-surface px-margin-mobile py-10 flex flex-col">
+<h1 class="text-dark-teal font-extrabold text-[28px] leading-tight uppercase tracking-tight">
+    Make the Occasion more Special
+  </h1>
+</section>
+<!-- Selection Controls -->
+<div class="px-margin-mobile pt-2 flex flex-col gap-6">
+<div>
+<h2 class="text-lg uppercase tracking-tight leading-tight font-semibold">SELECT A SONG TO PERSONALIZE</h2>
+</div>
+<section>
+<div class="flex overflow-x-auto gap-2 -mx-margin-mobile px-margin-mobile custom-scrollbar whitespace-nowrap pb-2">
+<button class="flex-shrink-0 px-4 rounded-full font-bold text-xs uppercase tracking-tight shadow-sm border-2 bg-vibrant-coral text-white border-vibrant-coral py-3">Birthday (KIDS)</button>
+<button class="flex-shrink-0 px-4 rounded-full bg-surface-container-high text-on-surface-variant font-bold text-xs uppercase tracking-tight border-2 border-transparent py-3">Anniversary</button>
+<button class="flex-shrink-0 px-4 rounded-full bg-surface-container-high text-on-surface-variant font-bold text-xs uppercase tracking-tight border-2 border-transparent py-3">Birthday (Adult)</button>
+<button class="flex-shrink-0 px-4 rounded-full bg-surface-container-high text-on-surface-variant font-bold text-xs uppercase tracking-tight border-2 border-transparent py-3">Wedding</button>
+<button class="flex-shrink-0 px-4 rounded-full bg-surface-container-high text-on-surface-variant font-bold text-xs uppercase tracking-tight border-2 border-transparent py-3">Graduation</button>
+</div>
+</section>
+</div>
+<!-- Main scrollable content -->
+<div class="px-margin-mobile mt-8 pb-48">
+<!-- Vertical Song List -->
+<div class="flex flex-col gap-6">
+<!-- Song Card 1 -->
+<div class="flex items-center gap-4 py-5 px-3 bg-surface-container-lowest rounded-lg shadow-sm border border-surface-container-high active:scale-[0.98] transition-transform">
+<div class="flex-shrink-0 flex items-center justify-center">
+<div class="h-6 w-6 rounded-full border-2 border-bright-yellow bg-bright-yellow flex items-center justify-center">
+<span class="material-symbols-outlined text-dark-teal text-lg font-bold">check</span>
+</div>
+</div>
+<div class="relative flex-shrink-0 h-16 w-16 rounded-lg bg-surface-container-highest overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-br from-primary-container/40 to-dark-teal/20"></div>
+<img class="h-full w-full object-cover mix-blend-overlay" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfyR83jvMm1cQnrfSCTtp2j6zWtvXDdGYy2qUSSVxE0ytvyLCFAQQ6rb1uzic1o18vG71FvsALjV5W5b7UV9yHkOdzJb4hNn80qZhvLwK1qEFOOEx6_C-501iQWt-z8epdG4bTo8iaqUfAQkP6PyuN459R8xUM-TPvDD7Deh3-W6MO4QrvMHRNIFNHPhqBIQRvku_yYz6gTAQFHWWdn6Dn0JFNXw-DrBunHpdxUb-shhIKw_VTieAimnbNXd_UlU_74EcyKM1_GBPH">
+</div>
+<div class="flex-grow min-w-0">
+<div class="inline-block bg-vibrant-coral text-white text-[10px] font-black px-1.5 py-0.5 rounded-sm mb-1 uppercase tracking-wider shadow-sm">MOST PREFERRED</div>
+<h3 class="text-sm font-black uppercase truncate">Golden Memories</h3>
+<p class="text-[11px] text-on-surface-variant line-clamp-1">Warm acoustic folk with nostalgic undertones.<span class="ml-1 text-primary cursor-pointer hover:underline font-semibold">...more</span></p><div class="flex flex-wrap gap-1 mt-2"><span class="px-2 py-0.5 bg-surface-container text-on-surface-variant text-[9px] font-medium font-['Montserrat'] rounded-lg uppercase tracking-wider">Acoustic</span><span class="px-2 py-0.5 bg-surface-container text-on-surface-variant text-[9px] font-medium font-['Montserrat'] rounded-lg uppercase tracking-wider">Folk</span><span class="px-2 py-0.5 bg-surface-container text-on-surface-variant text-[9px] font-medium font-['Montserrat'] rounded-lg uppercase tracking-wider">Nostalgic</span></div>
+</div>
+<button class="h-10 w-10 rounded-full bg-bright-yellow text-dark-teal flex items-center justify-center flex-shrink-0 shadow-sm">
+<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">play_arrow</span>
+</button>
+</div>
+<!-- Song Card 2 -->
+<div class="flex items-center gap-4 py-5 px-3 bg-surface-container-lowest rounded-lg shadow-sm border border-surface-container-high active:scale-[0.98] transition-transform">
+<div class="flex-shrink-0 flex items-center justify-center">
+<div class="h-6 w-6 rounded-full border-2 border-surface-container-highest bg-transparent"></div>
+</div>
+<div class="relative flex-shrink-0 h-16 w-16 rounded-lg bg-surface-container-highest overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-br from-vibrant-coral/40 to-dark-teal/20"></div>
+<img class="h-full w-full object-cover mix-blend-overlay" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpsrPTqgJBpBseA1lx04ws-0ikLpTffPiAqMG_z41EFzewZf4k1JYsgJl2Lb-tWUwVHzSw-YhwJ2VIj1s3UIpKPVimiYFHslN4eunWfw3eurFlqhLHF4iOIOGSpsJ4mGCprBlhMlK3BpoE9aiD5SdUOQEUwR8cs0pACylOhANtBF0Y5SFi0xGIit6nQA8l6c-U0GYKIcK-MSH8ppJS6Br5eTnqWKtFIc8nVJSgrgYUd1F-6XZ46zvoSjtzhrurVNy5R70x0fFP_hyc">
+</div>
+<div class="flex-grow min-w-0">
+<h3 class="text-sm font-black uppercase truncate">Rhythmic Toast</h3>
+<p class="text-[11px] text-on-surface-variant line-clamp-1">Upbeat jazz-pop perfect for a celebration.</p><div class="flex flex-wrap gap-1 mt-2"><span class="px-2 py-0.5 bg-surface-container text-on-surface-variant text-[9px] font-medium font-['Montserrat'] rounded-lg uppercase tracking-wider">Jazz-Pop</span><span class="px-2 py-0.5 bg-surface-container text-on-surface-variant text-[9px] font-medium font-['Montserrat'] rounded-lg uppercase tracking-wider">Upbeat</span><span class="px-2 py-0.5 bg-surface-container text-on-surface-variant text-[9px] font-medium font-['Montserrat'] rounded-lg uppercase tracking-wider">Celebration</span></div>
+</div>
+<button class="h-10 w-10 rounded-full bg-surface-container-high text-dark-teal flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">play_arrow</span>
+</button>
+</div>
+<!-- Song Card 3 -->
+<div class="flex items-center gap-4 py-5 px-3 bg-surface-container-lowest rounded-lg shadow-sm border border-surface-container-high active:scale-[0.98] transition-transform">
+<div class="flex-shrink-0 flex items-center justify-center">
+<div class="h-6 w-6 rounded-full border-2 border-surface-container-highest bg-transparent"></div>
+</div>
+<div class="relative flex-shrink-0 h-16 w-16 rounded-lg bg-surface-container-highest overflow-hidden">
+<img class="h-full w-full object-cover grayscale opacity-50" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAikR47RKgGxmWF5bk4KMKtpU-OmGw0d2AZvt0lcE7Omlxp6kQWC7k4kjj7iZ4h2j9JK2r14fveEdrQZ0JmPzv3t-yPB-aBgyYRP0PayhdjiC0iHbL-bBJgkiOTI3XDJJD69Q4FxtHnsQ0XtdAjSX5_sqGZOSHm0jmj7rwj1PVZy9b1Tnka6nKerraHOXQNKB6yrN1JmhXRflsd6eElzbK0ed0sTqxwD5wnBAV4m1GqGN56nJ-YwH8lCDa0PIsb6EMiVt4VA_0k3CXG">
+</div>
+<div class="flex-grow min-w-0">
+<h3 class="text-sm font-black uppercase truncate">Eternal Glow</h3>
+<p class="text-[11px] text-on-surface-variant line-clamp-1">Soft piano ballad for a timeless message.</p><div class="flex flex-wrap gap-1 mt-2"><span class="px-2 py-0.5 bg-surface-container text-on-surface-variant text-[9px] font-medium font-['Montserrat'] rounded-lg uppercase tracking-wider">Piano</span><span class="px-2 py-0.5 bg-surface-container text-on-surface-variant text-[9px] font-medium font-['Montserrat'] rounded-lg uppercase tracking-wider">Ballad</span><span class="px-2 py-0.5 bg-surface-container text-on-surface-variant text-[9px] font-medium font-['Montserrat'] rounded-lg uppercase tracking-wider">Timeless</span></div>
+</div>
+<button class="h-10 w-10 rounded-full bg-surface-container-high text-dark-teal flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">play_arrow</span>
+</button>
+</div>
+<!-- Song Card 4 -->
+<div class="flex items-center gap-4 py-5 px-3 bg-surface-container-lowest rounded-lg shadow-sm border border-surface-container-high active:scale-[0.98] transition-transform">
+<div class="flex-shrink-0 flex items-center justify-center">
+<div class="h-6 w-6 rounded-full border-2 border-surface-container-highest bg-transparent"></div>
+</div>
+<div class="relative flex-shrink-0 h-16 w-16 rounded-lg bg-surface-container-highest overflow-hidden">
+<img class="h-full w-full object-cover opacity-60" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2VR2fMsp0bEj_weiimNCs7GuiRzeXDYsyfenEsHD9b2xZ1Kv2A9tDA5JEx2MHpzZ6pdSFe0upNHMWuoj2_5P__oozXsGAQa0hmbgglw7yt7ncieX6ep0sPh0p_hgQGj3oGO2wFs3hHZa8mj-3bFZc19YJF2wBCqCI3uVSDR-FS3DxS_Xrr2W4Ro9hYkR2UOQYt7rWYAyXq6THB2IEyR9cFJbKxVNGNs0OZAS1W74cHvp9nxqf34H7WI3kavvIa-HM3sJH60IaQ-P5">
+</div>
+<div class="flex-grow min-w-0">
+<h3 class="text-sm font-black uppercase truncate">Summer Breeze</h3>
+<p class="text-[11px] text-on-surface-variant line-clamp-1">Light tropical house with airy vocals.</p><div class="flex flex-wrap gap-1 mt-2"><span class="px-2 py-0.5 bg-surface-container text-on-surface-variant text-[9px] font-medium font-['Montserrat'] rounded-lg uppercase tracking-wider">Tropical</span><span class="px-2 py-0.5 bg-surface-container text-on-surface-variant text-[9px] font-medium font-['Montserrat'] rounded-lg uppercase tracking-wider">House</span><span class="px-2 py-0.5 bg-surface-container text-on-surface-variant text-[9px] font-medium font-['Montserrat'] rounded-lg uppercase tracking-wider">Airy</span></div>
+</div>
+<button class="h-10 w-10 rounded-full bg-surface-container-high text-dark-teal flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">play_arrow</span>
+</button>
+</div>
+<!-- Song Card 5 -->
+<div class="flex items-center gap-4 py-5 px-3 bg-surface-container-lowest rounded-lg shadow-sm border border-surface-container-high active:scale-[0.98] transition-transform">
+<div class="flex-shrink-0 flex items-center justify-center">
+<div class="h-6 w-6 rounded-full border-2 border-surface-container-highest bg-transparent"></div>
+</div>
+<div class="relative flex-shrink-0 h-16 w-16 rounded-lg bg-surface-container-highest overflow-hidden">
+<img class="h-full w-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoly2cpKiheGLVQukzcKx-Xs0P4p5IyxZq9BVm_trySnzY0eh-cyhnhdeJen6YFKiMN2ZPIhzT-QIHk_oZ62VZEphGAJCeaYfaJGm22hvtO0jaON5pzmCdlt_y4MB-PW0Ai4NNXwyKZlGw89fv-CzFt_Tx7pS0bpSbGWXuLHOli8Qx9hR6kV6bczkbC05QhTaQzt5FhbNh7XD-oQrLlzvlQNMAXWzOXQQqqU3FA0ihVbByzA28VEk5EiwDy5qkdk6DcC5euuKGwe4">
+</div>
+<div class="flex-grow min-w-0">
+<h3 class="text-sm font-black uppercase truncate">Midnight Waltz</h3>
+<p class="text-[11px] text-on-surface-variant line-clamp-1">Classy orchestral track with modern rhythm.</p>
+</div>
+<button class="h-10 w-10 rounded-full bg-surface-container-high text-dark-teal flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">play_arrow</span>
+</button>
+</div>
+</div>
+</div>
+</main>
+<!-- Fixed Footer Area -->
+<div class="fixed bottom-0 left-0 w-full z-50">
+<div class="bg-background px-margin-mobile pt-3 pb-2 border-t border-surface-container-high">
+
+</div>
+
+</div>
+<script>
+        function handleContinue() {
+            const nameInput = document.getElementById('recipient_name');
+            if (nameInput.value.trim() === "") {
+                nameInput.classList.remove('border-dark-teal');
+                nameInput.classList.add('border-error');
+                setTimeout(() => {
+                    nameInput.classList.remove('border-error');
+                    nameInput.classList.add('border-dark-teal');
+                }, 2000);
+            } else {
+                console.log("Personalizing for:", nameInput.value);
+            }
+        }
+    </script>
+
+
+
+
+</body></html>

@@ -1,0 +1,1 @@
+ALTER TABLE "rj_shows" ADD COLUMN "language" text DEFAULT 'Hindi' NOT NULL;
